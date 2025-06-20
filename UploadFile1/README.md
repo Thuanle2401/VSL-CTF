@@ -29,7 +29,7 @@
 - Hàm `explode(".", $filename)[1]` tách các phần của tên file dựa vào `.` và sau đó lấy phần extension sau tên file, ví dụ: file.png thì `$extension = "png"`.
 - Tận dụng đoạn code lỗi `$extension = explode(".", $filename)[1];` này, kẻ tấn công upload file có tên `test.png.php` và vượt qua được lớp filter `if ($extension === "php")`.
 
-**Step to reproduce**
+**Solution**
 1. Upload file `test.png.php` với công cụ burpsuite:
 - Link download burpsuite: **https://portswigger.net/burp/communitydownload**
 - Nhập url `http://61.14.233.78:30000` vào browser của burpsuite:
