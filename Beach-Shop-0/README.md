@@ -15,11 +15,11 @@
 ## 3. Solution:
 - Ta có thể đoán được việc trang web đọc nội dung của file ở server sau đó hiển thị phía client. Vậy sẽ ra sao nếu ta lợi dụng tính năng này để server đọc một nội dung của 1 file bất kì và hiện thị cho phía client.
 
-- Tại url: http://61.14.233.78:5000/images?file=swimming_goggles.jpg có 1 param là `file` và có giá trị `swimming_goggles.jpg`, ta thử thay giá trị của param này bằng `../../../../../../../../../etc/passwd` để xem server có trả về cho ta nội dung của file này hay không. Và có vẻ server cho download file `passwd`.
+- Tại url: http://61.14.233.78:5000/images?file=swimming_goggles.jpg có 1 param là `file` và có giá trị `swimming_goggles.jpg`, ta thử thay giá trị của param này bằng `../../../../../../../../../etc/passwd` và có vẻ như server cho ta download file `passwd`.
 
 ![img](./image/1.png)
 
-- Ta sẽ thử đọc nội dung của file passwd:
+- Ta sẽ thử đọc nội dung của file `passwd`:
 <pre>
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
