@@ -65,7 +65,7 @@ Chúc may mắn nhé! (Tài khoản test: guest/guest)</pre>
 
 ![5](./images/5.png)
 
-- Ta có thể thấy file `password.txt` và `questions` được hiển thị tại endpoint `/recover`, từ đây ta có thể đoán trang web đã được code để liệt kê các file, thư mục từ đường dẫn `/home/admin/questions`.
+- Ta có thể thấy file `password.txt` và `questions` được hiển thị tại endpoint `/recover`, từ đây ta có thể đoán trang web đã được lập trình để liệt kê các file, thư mục từ đường dẫn `/home/admin/questions`.
 
 - Vậy từ tất cả các dữ kiện trên ta đã phân tích, ta sẽ nhập thông tin vào endpoint hiện tại là `/recover` để có thể lấy được password của account `admin`:
 	+ username: `admin`
