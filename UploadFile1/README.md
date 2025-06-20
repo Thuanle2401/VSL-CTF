@@ -1,4 +1,6 @@
 # VSL Summer CTF
+
+![CTF](./images/VSL-summer.png)
 ---
 # Challenge: Upload file 1
 ---
