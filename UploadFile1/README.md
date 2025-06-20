@@ -1,6 +1,7 @@
 # VSL Summer CTF
 
 <img src="https://github.com/Thuanle2401/VSL-CTF/blob/main/UploadFile1/images/VSL-summer.png?raw=true" width="500" height="300">
+
 ---
 # Challenge: Upload file 1
 ---
