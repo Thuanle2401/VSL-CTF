@@ -1,4 +1,4 @@
-# WEB Challenge Write Up
+# VSL Summer CTF
 ---
 # Challenge: Upload file 1
 ---
