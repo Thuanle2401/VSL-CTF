@@ -18,6 +18,7 @@
 - [Flag Checker](./Reverse/flag-checker/README.md)
 
 ### 💣 Pwn
+- [Hot Hot Hot](./Pwn/challenge/hothothot/README.md)
 - [Summer Store](./Pwn/VSL-summer/summerStore/README.md)
 
 ### 🔐 Crypto

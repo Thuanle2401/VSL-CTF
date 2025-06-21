@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  casino:
+    build: .
+    ports:
+      - "7002:1337"
+    restart: unless-stopped 
+    environment:
+      - FLAG=VSL{fake_flag}
