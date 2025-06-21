@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  beef-stack:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7003:1337"
+    restart: always
