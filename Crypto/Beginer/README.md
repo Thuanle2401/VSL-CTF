@@ -23,4 +23,4 @@
 
 - Ta lại nhận được mã `base64` và mình sẽ tiếp tục decode với trang [Base64 online](https://www.base64decode.org/) 
 
-- Sau khi decode base64 lần đầu thì mình lại nhận được một mã base64 mới, tiếp tục decode cho đến khi nhận được nội dung có định dạng flag và flag mình nhận được là: `VSL{53400e6416d46e613203bb6f877ebc80}`
+- Sau khi decode `base64` lần đầu thì mình lại nhận được một mã `base64` mới, tiếp tục decode cho đến khi nhận được nội dung có định dạng flag và flag mình nhận được flag là: `VSL{53400e6416d46e613203bb6f877ebc80}`
