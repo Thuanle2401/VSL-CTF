@@ -25,7 +25,7 @@
 
 - Vậy mọi chuyện bây giờ chỉ đơn giản là xác định số cột rồi trích xuất tất cả dữ liệu trong database của server.
 
-- Mình đã có thử dùng `ORDER BY` để xác định số cột nhưng đã bị chặn, nên mình đã chuyển sang dùng `UNION SELECT` để xác định số cột và số cột là `4`.
+- Mình đã có thử dùng `ORDER BY` để xác định số cột nhưng đã bị chặn, nên mình đã chuyển sang dùng `UNION SELECT` để xác định số cột và số cột là `5`.
 
 - Trích xuất dữ liệu:
 	- Payload: `' UNION SELECT NULL, database(), NULL, NULL, NULL -- -` <br>
