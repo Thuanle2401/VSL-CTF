@@ -19,7 +19,7 @@
 - Tại http://61.14.233.78:30000, trang cho phép người dùng có thể upload file lên server và lưu vào thư mục `/image/`.
 - Tuy nhiên, trang web lại không xử lý chặt chẽ việc upload các file có extension độc hại. File độc hại này sẽ được lưu lại và có thể truy cập trực tiếp qua đường dẫn công khai, dẫn đến **RCE(Remote Code Execution)**.
 
-**Root Cause Analysis**
+**Vulnerability Cause Analysis**
 - Lỗ hỗng này xuất phát từ việc chỉ kiểm tra 1 phần extension của file mà không kiểm tra extension cuối cùng và kẻ tấn công có thể upload các file có hai extension như `.png.php` để có thể RCE do cấu hình mặc định của Apache cho phép thực thi file có extension cuối cùng là `.php`.
 - Code bị lỗi ví dụ cho việc xử lý file không an toàn trên:
 ```php
