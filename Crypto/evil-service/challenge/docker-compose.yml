@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  trust-urself:
+    build: .
+    ports:
+      - "9000:1337"

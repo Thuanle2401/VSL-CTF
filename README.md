@@ -23,3 +23,9 @@
 
 ### 🔐 Crypto
 - [Beginer](./Crypto/Beginer/README.md)
+- [Evil Service](./Crypto/evil-service/README.md)
+- [D0r43m0n](./Crypto/d0r43m0n/README.md)
+
+### 🕵️‍♂️ Forensis
+- [Can you find it ?](./Forensis/Can-you-find-it/README.md)
+- [log log log](./Forensis/forensics_vulnerable_season/README.md)

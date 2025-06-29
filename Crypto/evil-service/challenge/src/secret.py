@@ -1,0 +1,1 @@
+FLAG = b"VSL{FAKE_FLAG}"

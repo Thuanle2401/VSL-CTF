@@ -49,8 +49,7 @@
 
 ![img2](./images/2.png)
 
-- Ta thấy file `test.png.php` đã được server thực thi và hiển thị nội dung của 
-hàm `phpinfo()`.
+- Ta thấy file `test.png.php` đã được server thực thi và hiển thị nội dung của hàm `phpinfo()`.
 
 3. Điều chỉnh nội dung gói tin đã gửi qua tab `Repeater` ở bước 2 và đọc nội dung của flag:
 - Ta sửa hàm `phpinfo()` thành `system('ls /')` sau đó ấn `Send` để gửi gói tin đến server.

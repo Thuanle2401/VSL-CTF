@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  time-travel:
+    build: .
+    ports:
+      - "3324:1337"
+    restart: always

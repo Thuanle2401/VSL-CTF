@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  magic-pwn:
+    build: .
+    ports:
+      - "9938:1337"
+    container_name: magic-pwn-challenge
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '1.0'
+    volumes:
+      - ./src:/home/pwn/src:ro
+    environment:
+      - FLAG_FILE=/home/pwn/flag.txt 
